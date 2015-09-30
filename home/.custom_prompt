@@ -1,2 +1,5 @@
 # Custom bash prompt via kirsle.net/wizards/ps1.html
 export PS1="\[$(tput bold)\]\[$(tput setaf 3)\]\D{%k:%M:%S} \[$(tput setaf 4)\]\u\[$(tput sgr0)\]:\[$(tput setaf 2)\]\w\[$(tput setaf 5)\]\\$ \[$(tput sgr0)\]"
+
+bind 'set show-all-if-ambiguous on'
+bind 'TAB:menu-complete'
