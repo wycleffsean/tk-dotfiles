@@ -1,8 +1,7 @@
 alias be="bundle exec "
 alias bi="bundle install"
 alias top10="ps aux --sort -rss | head -11"
+alias swp="find -iname \*.sw*"
 
 alias vim-git='vim -O $(git status -s | sed "s/??/ ?/g" | cut -d " " -f 3 | xargs)'
-#alias vim-swp="vim -O `find . -iname \*.sw* | xargs tr ".swp" '' | tr "\\n" ' '`"
-
-alias swp="find -iname \*.sw*"
+alias vim-swp='vim -O $(swp | sed "s/\.sw.//g" | sed "s/\/\./\//g" | xargs)'
