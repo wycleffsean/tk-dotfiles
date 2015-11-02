@@ -1,0 +1,19 @@
+[core]
+        excludesfile = /home/vagrant/.gitignore_global
+[user]
+	name = Sean Carey
+	email = sean.carey@technekes.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	ui = true
+	pager = true
+[alias]
+	lg = log --color --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	wdiff = diff --color-words
+        au = update-index --assume-unchanged
+        nau = update-index --assume-unchanged
+[push]
+	default = simple
