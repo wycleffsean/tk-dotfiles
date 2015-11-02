@@ -5,3 +5,5 @@ alias swp="find -iname \*.sw*"
 
 alias vim-git='vim -O $(git status -s | sed "s/??/ ?/g" | cut -d " " -f 3 | xargs)'
 alias vim-swp='vim -O $(swp | sed "s/\.sw.//g" | sed "s/\/\./\//g" | xargs)'
+
+source ~/.homesick/repos/tk-dotfiles/bin/z.sh
