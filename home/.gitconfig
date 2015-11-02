@@ -10,6 +10,8 @@
 	interactive = auto
 	ui = true
 	pager = true
+[commit]
+        template = ~/.gitmessage
 [alias]
 	lg = log --color --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	wdiff = diff --color-words
